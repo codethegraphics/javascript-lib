@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hi</title>
-	
+	<title>IIFE</title>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src=""></script>
 </head>
 <body>
 
-	<canvas id="myCanvas" height="500" width="700"></canvas>
+<canvas id="myCanvas" height="500" width="700"></canvas>
 
-	<!--<script type="text/javascript" src="js/script.js"></script>-->
-	<script type="text/javascript" src="js/rough.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		// creating object of graph to communicate with the library
+		var obj = new Graph();
+
+		obj.drawCircle("myCanvas"); // function to draw the circle
+
+	};
+</script>
+
 </body>
 </html>
